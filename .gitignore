@@ -1,0 +1,27 @@
+# --- Magento folders to ignore ---
+/var/
+/pub/static/*
+!/pub/static/.htaccess
+/generated/
+/vendor/
+/app/etc/env.php
+/app/etc/config.php
+
+# --- Composer & Node ---
+/node_modules/
+/composer.lock
+/package-lock.json
+
+# --- IDE and OS ---
+.idea/
+/.vscode/
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# --- Git ---
+.git/
