@@ -11,8 +11,11 @@ class Goodbye extends Action
     protected $resultPageFactory;
     protected $logger;
 
-    public function __construct(Context $context, PageFactory $resultPageFactory, LoggerInterface $logger)
-    {
+    public function __construct(
+        Context $context,
+        PageFactory $resultPageFactory,
+        LoggerInterface $logger
+    ) {
         $this->resultPageFactory = $resultPageFactory;
         $this->logger = $logger;
         parent::__construct($context);
@@ -20,7 +23,8 @@ class Goodbye extends Action
 
     public function execute()
     {
-        $this->logger->info('GoodbyeWorld Controller loaded');
+        $this->logger->info('✅ Le contrôleur Goodbye a bien été exécuté.');
+
         return $this->resultPageFactory->create();
     }
 }

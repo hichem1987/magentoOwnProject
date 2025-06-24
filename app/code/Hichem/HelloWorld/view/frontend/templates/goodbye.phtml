@@ -1,2 +1,12 @@
-<h1>Goodbye, Magento World!</h1>
-<p>This is the goodbye page of your module.</p>
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<h1>Hello from goodbye.phtml 👋</h1>
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Hichem\HelloWorld\ViewModel\MessageProvider $viewModel */
+
+$viewModel = $block->getViewModel();
+?>
+
+<h1><?= $viewModel->getMessage(); ?></h1>
