@@ -1,12 +1,5 @@
-<?php
-/** @var \Magento\Framework\View\Element\Template $block */
-?>
+<?php /** @var \Hichem\HelloWorld\ViewModel\Goodbye $viewModel */ ?>
+<?php $viewModel = $block->getData('view_model'); ?>
+
 <h1>Hello from goodbye.phtml 👋</h1>
-<?php
-/** @var \Magento\Framework\View\Element\Template $block */
-/** @var \Hichem\HelloWorld\ViewModel\MessageProvider $viewModel */
-
-$viewModel = $block->getViewModel();
-?>
-
-<h1><?= $viewModel->getMessage(); ?></h1>
+<p>Message de configuration : <strong><?= $viewModel->getMessage() ?></strong></p>

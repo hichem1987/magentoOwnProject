@@ -1,14 +1,15 @@
-<?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-  <body>
-    <referenceContainer name="content">
-      <block class="Magento\Framework\View\Element\Template"
-             name="goodbye.viewmodel"
-             template="Hichem_HelloWorld::goodbye.phtml">
-        <arguments>
-          <argument name="view_model" xsi:type="object">Hichem\HelloWorld\ViewModel\MessageProvider</argument>
-        </arguments>
-      </block>
-    </referenceContainer>
-  </body>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="helloworld.goodbye"
+                   template="Hichem_HelloWorld::goodbye.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Hichem\HelloWorld\ViewModel\Goodbye</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
 </page>
